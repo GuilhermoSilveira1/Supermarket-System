@@ -15,16 +15,17 @@ public class MenuPrincipal implements Serializable {
 
     public static void main(String[] args) {
 
-        ArrayList<Produtos> ListaProdutos = new ArrayList<>();
+        ArrayList<Clientes> ListaClientes = new ArrayList<>();
+        ArrayList<Atendentes> ListaAtendentes = new ArrayList<>();
         Serializador serializador = new Serializador();
-        boolean agenda = true;
+        boolean sistema = true;
 
-        while (agenda) {
+        while (sistema) {
 
             System.out.println("Olá, qual ação gostaria de realizar?");
             System.out.println("1 - Realizar venda");
-            System.out.println("2 - Cadastrar novo cliente");
-            System.out.println("3 - Cadastrar novo atendente");
+            System.out.println("2 - Ir para o menu cliente");
+            System.out.println("3 - Ir para o menu atendente");
             System.out.println("4 - Consultar o histórico de compras e de vendas");
             System.out.println("5 - Gerenciamento de Estoque");
             System.out.println("6 - Pedidos de Compra");
@@ -36,14 +37,14 @@ public class MenuPrincipal implements Serializable {
 
             if (action > 0 && action < 5) {
                 switch (action) {
-                    case 1:
+                    case 1: //Realizar venda
                         Produtos produto = new Produtos();
                         produto = produto.criarProdutos();
                         ListaProdutos.add(produto);
                         System.out.println("A agenda agora possui " + ListaProdutos.size() + " contatos.");
                         break;
 
-                    case 2:
+                    case 2: //Ir para o menu cliente
                         if (ListaProdutos.isEmpty()) {
                             System.out.println("A lista está vazia!");
                             System.out.println(" ");
