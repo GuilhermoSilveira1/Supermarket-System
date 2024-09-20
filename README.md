@@ -12,10 +12,5 @@ Ao executar o arquivo principal do menu, uma interface de linha de comando (CLI)
 - Não há dependências externas. O projeto pode ser executado diretamente em sua máquina.
 
 ### Imagem do Projeto
-Para adicionar uma imagem do projeto rodando, siga os passos abaixo:
-1. Tire uma captura de tela do programa em execução.
-2. Adicione a imagem à pasta do projeto.
-3. Insira o código a seguir no README, substituindo `path/to/image` pelo caminho da sua imagem:
 
-```md
-![Supermarket System Running](path/to/image)
+![Supermarket System Running](https://github.com/GuilhermoSilveira1/Supermarket-System/blob/main/Supermercado.png)
